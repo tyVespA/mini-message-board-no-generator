@@ -12,5 +12,17 @@
       %>
     </p>
     <% } %>
+    <form action="/" method="post">
+      <input type="text" name="messageUser" placeholder="Username" required />
+      <textarea
+        name="messageText"
+        id="messageText"
+        cols="30"
+        rows="10"
+        placeholder="Message Text"
+        required
+      ></textarea>
+      <button>Send message</button>
+    </form>
   </body>
 </html>

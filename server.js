@@ -11,7 +11,7 @@ app.use(express.static("public"));
 
 app.use("/", router);
 
-app.listen(port, (err) => {
+app.listen(port, "0.0.0.0", (err) => {
   if (err) {
     console.log(err);
   } else {

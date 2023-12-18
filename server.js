@@ -11,4 +11,10 @@ app.use(express.static("public"));
 
 app.use("/", router);
 
-app.listen(port);
+app.listen(port, (err) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log("Listening on port:", port);
+  }
+});

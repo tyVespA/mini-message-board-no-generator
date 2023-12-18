@@ -9,8 +9,4 @@ app.use(express.static("public"));
 
 app.use("/", router);
 
-// app.get("/", (req, res) => {
-//   res.render("index", { title: "Mini Messageboard", messages: messages });
-// });
-
-app.listen(3000);
+app.listen(3000, "0.0.0.0");
